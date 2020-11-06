@@ -2,7 +2,7 @@ _G.ToggleColor = Color3.fromRGB(255,0,0)
 _G.ButtonColor = Color3.fromRGB(0,255,0)
 _G.SliderColor = Color3.fromRGB(0,0,255)
 
-local library = loadstring(game:HttpGet(('https://pastebin.com/raw/FsJak6AT')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/SharKKProd/uibackups/main/Wally%20v3%20Remake/First%20Version/uilibrary.lua')))() -- It's obfuscated, I won't let you see my ugly coding skills. =)
 
 local w = library:CreateWindow("Window")
 
