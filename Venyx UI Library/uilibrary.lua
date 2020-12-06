@@ -211,9 +211,15 @@ do
 	
 	-- new classes
 	
-	function library.new(title)
+    function library.new(title)
+        local OldInstance = game.CoreGui.RobloxGui:FindFirstChild(title)
+
+        if OldInstance then
+            OldInstance:Destroy()
+        end
+        
 		local container = utility:Create("ScreenGui", {
-			Name = math.random(-99999, 99999),
+			Name = title,
 			Parent = game.CoreGui.RobloxGui
 		}, {
 			utility:Create("ImageLabel", {
